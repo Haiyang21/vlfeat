@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B76F44D0-0F2F-4AA1-BED4-0ED6910DDF75}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vlfeat</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;VL_BUILD_DLL;_CRT_SECURE_NO_WARNINGS;__SSE2__;_SSE2_;__AVX__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="vl\aib.h" />
+    <ClInclude Include="vl\array.h" />
+    <ClInclude Include="vl\covdet.h" />
+    <ClInclude Include="vl\dsift.h" />
+    <ClInclude Include="vl\fisher.h" />
+    <ClInclude Include="vl\generic.h" />
+    <ClInclude Include="vl\getopt_long.h" />
+    <ClInclude Include="vl\gmm.h" />
+    <ClInclude Include="vl\heap-def.h" />
+    <ClInclude Include="vl\hikmeans.h" />
+    <ClInclude Include="vl\hog.h" />
+    <ClInclude Include="vl\homkermap.h" />
+    <ClInclude Include="vl\host.h" />
+    <ClInclude Include="vl\ikmeans.h" />
+    <ClInclude Include="vl\imopv.h" />
+    <ClInclude Include="vl\imopv_sse2.h" />
+    <ClInclude Include="vl\kdtree.h" />
+    <ClInclude Include="vl\kmeans.h" />
+    <ClInclude Include="vl\lbp.h" />
+    <ClInclude Include="vl\liop.h" />
+    <ClInclude Include="vl\mathop.h" />
+    <ClInclude Include="vl\mathop_avx.h" />
+    <ClInclude Include="vl\mathop_sse2.h" />
+    <ClInclude Include="vl\mser.h" />
+    <ClInclude Include="vl\pgm.h" />
+    <ClInclude Include="vl\qsort-def.h" />
+    <ClInclude Include="vl\quickshift.h" />
+    <ClInclude Include="vl\random.h" />
+    <ClInclude Include="vl\rodrigues.h" />
+    <ClInclude Include="vl\scalespace.h" />
+    <ClInclude Include="vl\shuffle-def.h" />
+    <ClInclude Include="vl\sift.h" />
+    <ClInclude Include="vl\slic.h" />
+    <ClInclude Include="vl\stringop.h" />
+    <ClInclude Include="vl\svm.h" />
+    <ClInclude Include="vl\svmdataset.h" />
+    <ClInclude Include="vl\vlad.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="vl\aib.c" />
+    <ClCompile Include="vl\array.c" />
+    <ClCompile Include="vl\covdet.c" />
+    <ClCompile Include="vl\dsift.c" />
+    <ClCompile Include="vl\fisher.c" />
+    <ClCompile Include="vl\generic.c" />
+    <ClCompile Include="vl\getopt_long.c" />
+    <ClCompile Include="vl\gmm.c" />
+    <ClCompile Include="vl\hikmeans.c" />
+    <ClCompile Include="vl\hog.c" />
+    <ClCompile Include="vl\homkermap.c" />
+    <ClCompile Include="vl\host.c" />
+    <ClCompile Include="vl\ikmeans.c" />
+    <ClCompile Include="vl\imopv.c" />
+    <ClCompile Include="vl\imopv_sse2.c" />
+    <ClCompile Include="vl\kdtree.c" />
+    <ClCompile Include="vl\kmeans.c" />
+    <ClCompile Include="vl\lbp.c" />
+    <ClCompile Include="vl\liop.c" />
+    <ClCompile Include="vl\mathop.c" />
+    <ClCompile Include="vl\mathop_avx.c" />
+    <ClCompile Include="vl\mathop_sse2.c" />
+    <ClCompile Include="vl\mser.c" />
+    <ClCompile Include="vl\pgm.c" />
+    <ClCompile Include="vl\quickshift.c" />
+    <ClCompile Include="vl\random.c" />
+    <ClCompile Include="vl\rodrigues.c" />
+    <ClCompile Include="vl\scalespace.c" />
+    <ClCompile Include="vl\sift.c" />
+    <ClCompile Include="vl\slic.c" />
+    <ClCompile Include="vl\stringop.c" />
+    <ClCompile Include="vl\svm.c" />
+    <ClCompile Include="vl\svmdataset.c" />
+    <ClCompile Include="vl\vlad.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

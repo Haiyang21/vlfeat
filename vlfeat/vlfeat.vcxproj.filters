@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\vlad.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\svmdataset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\svm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\stringop.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\slic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\sift.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\shuffle-def.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\scalespace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\rodrigues.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\quickshift.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\qsort-def.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\pgm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\mser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\mathop_sse2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\mathop_avx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\mathop.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\liop.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\lbp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\kmeans.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\kdtree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\imopv_sse2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\imopv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\ikmeans.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\host.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\homkermap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\hog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\hikmeans.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\heap-def.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\gmm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\getopt_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\generic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\fisher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\dsift.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\covdet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\array.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vl\aib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\aib.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\array.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\covdet.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\dsift.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\fisher.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\generic.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\getopt_long.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\gmm.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\hikmeans.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\hog.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\homkermap.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\host.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\ikmeans.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\imopv.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\imopv_sse2.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\kdtree.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\kmeans.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\lbp.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\liop.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\mathop.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\mathop_avx.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\mathop_sse2.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\mser.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\pgm.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\quickshift.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\random.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\rodrigues.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\scalespace.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\sift.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\slic.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\stringop.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\svm.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\svmdataset.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vl\vlad.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
