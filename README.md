@@ -1,4 +1,5 @@
 #vlfeat-0.9.20 vs2013平台下将vlfeat库编译成lib和dll库
+注意：只需要在release模式下编译即可，生成的文件可以供debug模式下使用
 
   1. 新建vlfeat控制台应用程序，将vlfeat-0.9.20目录下的vl文件夹拷贝到~\vlfeat\vlfeat文件夹下；添加.c 和 .h 文件到工程中。
   2. 配置属性中的配置类型由“应用程序(.exe)” 改为 “动态库(.dll)”；字符集由“Unicode字符集” 改为“多字节字符集”
